@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT ACCOUNT</title>
+    <link rel="stylesheet" href="css/AD-INF-Ruevenue.css">
+    <link rel="stylesheet" href="css/AD-INF.css">
+    <script src="js/restricted-check.js"></script>
+
+
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    The Liems - IELTS Center
+    <button class="login-button" onclick="showLogoutConfirmation();">
+        <span class="login-button-top">Log Out</span>
+    </button>
+</div>
+
+<!-- Right side bar -->
+<div class="sidebar">
+    <button id="closeSidebar" class="Sidebarbtn" onclick="chinhSideBar()">
+        <!-- Left arrow -->
+        <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+            <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124h-604.773963l188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446h604.753497c11.2973 0 20.466124 9.158891 20.466124 20.466124z"></path>
+        </svg>
+    </button>
+
+    <div class="logo">
+    </div>
+    <ul class="menu">
+        <li><a href="ADMIN-INF.html"><img src="https://cdn-icons-png.flaticon.com/128/69/69524.png" alt="Home">Home</a></li>
+        <li><a href="AD-INF-CLASS.html"><img src="https://cdn-icons-png.flaticon.com/128/5404/5404967.png" alt="Class">Class</a></li>
+        <li><a href="AD-INF-ASSIGNMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/171/171322.png" alt="Assignment">Assignment</a></li>
+        <li><a href="AD-INF-MANAGEMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/3033/3033143.png" alt="Wage">Account</a></li>
+        <li><a href="AD-INF-REVENUE.html"><img src="https://cdn-icons-png.flaticon.com/128/10488/10488917.png" alt="Mock Test">Revenue</a></li>
+        <li><a href="AD-INF-TRACKING.html"><img src="https://cdn-icons-png.flaticon.com/128/9080/9080461.png" alt="Notification">Management</a></li>
+        <li><a href="AD-INF-MOCKTEST.html"><img src="https://cdn-icons-png.flaticon.com/128/29/29302.png" alt="Library">Mock Test</a></li>
+        <li><a href="AD-INF-NOTI.html"><img src="https://cdn-icons-png.flaticon.com/128/1827/1827349.png" alt="Library">Notification</a></li>
+        <li><a href="AD-INF-LIB.html"><img src="https://cdn-icons-png.flaticon.com/128/1164/1164651.png" alt="Library">Library</a></li>
+    </ul>
+</div>
+
+<!-- Button to reopen sidebar -->
+<button id="openSidebar" class="Sidebarbtn" onclick="chinhSideBar()" style="display: none; position: fixed; top: 45%; left: 1%; z-index: 1001;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M8 5v14l11-7z" fill="currentColor"/>
+    </svg>
+</button>
+
+<!-- Logout Confirmation Dialog -->
+<div class="logout-dialog-overlay" id="logoutDialog">
+    <div class="logout-dialog">
+        <p>Bạn có muốn đăng xuất?</p>
+        <button class="yes" onclick="handleLogout(true)">Yes</button>
+        <button class="no" onclick="handleLogout(false)">No</button>
+    </div>
+</div>
+
+<!-- Bắt đầu xuất báo cáo PDF từ đây -->
+
+
+<div class="TableBill">
+    <h2 style="font-size: 20px;">Bảng thống kê doanh thu theo gói</h2>
+    <form>
+
+        <label for="startDate">Start date:</label>
+        <input type="date" id="startDate" name="trip-start" min="2020-01-01" max="2024-12-31">
+
+        <label for="endDate">End date:</label>
+        <input type="date" id="endDate" name="trip-end" min="2020-01-01" max="2024-12-31">
+
+        <button type="button" onclick="fetchBills()">Search</button>
+    </form>
+
+
+    <table border="0" class="bangbills">
+        <thead>
+        <tr>
+            <th>Subject ID</th>
+            <th>Giá khóa học</th>
+            <th>Doanh thu gói</th>
+            <th>Số lượng bán</th>
+            <th>Phần trăm(%)</th>
+        </tr>
+        </thead>
+        <tbody id="billResults">
+        <!-- Results will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+
+</div>
+<div id="totalrevenue" class="total-revenue">
+    <div class="total-revenue-item">
+        Tổng doanh thu tính từ bảng: <span id="revenueAmount">0</span> đồng
+    </div>
+    <div class="total-revenue-item">
+        Tổng doanh thu từ khi thành lập:  <span id="revenueAmounttotal">0</span> đồng
+    </div>
+    <div class="total-revenue-item">
+        Doanh thu trung bình theo tháng:  <span id="averageRevenue">0</span> đồng
+    </div>
+</div>
+
+<h2 class="table-title">Bảng tổng hợp chi phí</h2>
+<table class="bangchiphi">
+    <thead>
+    <tr>
+        <th>Khoản mục</th>
+        <th>Số tiền (1 000 000 VND)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Mặt bằng</td>
+        <td><input type="number" class="cost" oninput="calculateTotal()"></td>
+    </tr>
+    <tr>
+        <td>In ấn</td>
+        <td><input type="number" class="cost" oninput="calculateTotal()"></td>
+    </tr>
+    <tr>
+        <td>Điện nước</td>
+        <td><input type="number" class="cost" oninput="calculateTotal()"></td>
+    </tr>
+    <tr>
+        <td>Lương và thưởng</td>
+        <td><input type="number" class="cost" oninput="calculateTotal()"></td>
+    </tr>
+    <tr>
+        <td>Liên hoan</td>
+        <td><input type="number" class="cost" oninput="calculateTotal()"></td>
+    </tr>
+    <tr>
+        <td>Tổ chức thi thử</td>
+        <td><input type="number" class="cost" oninput="calculateTotal()"></td>
+    </tr>
+    <tr>
+        <td>Bảo vệ, an ninh</td>
+        <td><input type="number" class="cost" oninput="calculateTotal()"></td>
+    </tr>
+    <tr>
+        <td>Vận hành nền tảng, công nghệ</td>
+        <td><input type="number" class="cost" oninput="calculateTotal()"></td>
+    </tr>
+    <tr>
+        <td>Chi phí khác</td>
+        <td><input type="number" class="cost" oninput="calculateTotal()"></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <th>Tổng chi phí</th>
+        <th><span id="total-cost"></span> x 1 000 000 VND</th>
+    </tr>
+    <tr>
+        <th>Lợi nhuận</th>
+        <th><span id="profitAmount"></span> x 1 000 000 VND</th>
+    </tr>
+    </tfoot>
+</table>
+
+<!-- thẻ hiển thị biểu đồ -->
+<h2 class="table-title">Tổng hợp</h2>
+
+<div class="charts-container">
+    <!-- Biểu đồ cột -->
+    <div class="chart-item">
+        <canvas id="revenueChart" width="400" height="300"></canvas>
+        <div class="chart-title">Doanh thu mang lại với mỗi khóa học</div>
+    </div>
+
+    <!-- Biểu đồ tròn -->
+    <div class="chart-item">
+        <canvas id="revenuePieChart" width="400" height="300"></canvas>
+        <div class="chart-title">Số lượng khóa học bán được phân chia theo tên gói</div>
+    </div>
+</div>
+
+
+
+
+<button id="exportReportButton" class="export-button">
+    Xuất báo cáo
+    <div class="star-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 784.11 815.53">
+      <g id="Layer_x0020_1">
+        <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path>
+      </g>
+    </svg>
+    </div>
+    <div class="star-2">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 784.11 815.53">
+      <g id="Layer_x0020_1">
+        <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path>
+      </g>
+    </svg>
+    </div>
+    <div class="star-3">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 784.11 815.53">
+      <g id="Layer_x0020_1">
+        <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path>
+      </g>
+    </svg>
+    </div>
+    <div class="star-4">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 784.11 815.53">
+      <g id="Layer_x0020_1">
+        <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path>
+      </g>
+    </svg>
+    </div>
+    <div class="star-5">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 784.11 815.53">
+      <g id="Layer_x0020_1">
+        <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path>
+      </g>
+    </svg>
+    </div>
+    <div class="star-6">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 784.11 815.53">
+      <g id="Layer_x0020_1">
+        <path class="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path>
+      </g>
+    </svg>
+    </div>
+</button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/ADRuevenue_tablebill.js"></script>
+<script src ='js/stu-inf-home.js'></script>
+
+</body>
+</html>

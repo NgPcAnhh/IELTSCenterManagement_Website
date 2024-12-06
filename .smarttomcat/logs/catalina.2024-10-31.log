@@ -1,0 +1,873 @@
+31-Oct-2024 13:40:23.022 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 13:40:23.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 13:40:23.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 13:40:23.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 13:40:23.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 13:40:23.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 13:40:23.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 13:40:23.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 13:40:23.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 13:40:23.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 13:40:23.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 13:40:23.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 13:40:23.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 13:40:23.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 13:40:23.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 13:40:23.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 13:40:23.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 13:40:23.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 13:40:23.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 13:40:23.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 13:40:23.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 13:40:23.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=50164:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 13:40:23.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 13:40:23.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 13:40:23.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 13:40:23.029 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 13:40:23.076 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 13:40:23.097 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 649 ms
+31-Oct-2024 13:40:23.148 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 13:40:23.148 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 13:40:23.161 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 13:40:24.787 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 13:40:24.853 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,691] ms
+31-Oct-2024 13:40:24.855 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 13:40:24.887 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1787 ms
+31-Oct-2024 13:42:59.989 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 13:42:59.989 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 13:43:00.020 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 13:43:00.020 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 13:43:00.035 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 13:43:00.051 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 13:43:28.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 13:43:28.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 13:43:28.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 13:43:28.669 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 13:43:28.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 13:43:28.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 13:43:28.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 13:43:28.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 13:43:28.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 13:43:28.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 13:43:28.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 13:43:28.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 13:43:28.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 13:43:28.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 13:43:28.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 13:43:28.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 13:43:28.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 13:43:28.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 13:43:28.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 13:43:28.678 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 13:43:28.679 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 13:43:28.679 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=50226:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 13:43:28.680 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 13:43:28.680 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 13:43:28.680 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 13:43:28.681 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 13:43:28.802 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 13:43:28.858 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 766 ms
+31-Oct-2024 13:43:29.000 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 13:43:29.001 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 13:43:29.031 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 13:43:31.019 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 13:43:31.135 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [2,104] ms
+31-Oct-2024 13:43:31.139 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 13:43:31.174 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2311 ms
+31-Oct-2024 13:43:36.807 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 13:43:36.810 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 13:43:36.825 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 13:43:36.843 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 18:47:47.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 18:47:47.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 18:47:47.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 18:47:47.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 18:47:47.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 18:47:47.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 18:47:47.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 18:47:47.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 18:47:47.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 18:47:47.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 18:47:47.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 18:47:47.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 18:47:47.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 18:47:47.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=50671:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 18:47:47.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 18:47:47.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 18:47:47.247 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 18:47:47.289 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 18:47:47.306 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 506 ms
+31-Oct-2024 18:47:47.347 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 18:47:47.348 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 18:47:47.357 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 18:47:48.443 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 18:47:48.510 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,153] ms
+31-Oct-2024 18:47:48.512 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 18:47:48.529 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1222 ms
+31-Oct-2024 18:50:13.374 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 18:50:13.376 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 18:50:13.385 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 18:50:13.385 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 18:50:13.392 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 18:50:13.405 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:01:54.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:01:54.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:01:54.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:01:54.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:01:54.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:01:54.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:01:54.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:01:54.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:01:54.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:01:54.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:01:54.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:01:54.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:01:54.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:01:54.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:01:54.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:01:54.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:01:54.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:01:54.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:01:54.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:01:54.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:01:54.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:01:54.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=50755:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:01:54.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:01:54.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:01:54.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:01:54.206 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:01:54.252 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:01:54.272 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 554 ms
+31-Oct-2024 19:01:54.315 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:01:54.315 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:01:54.327 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:01:55.378 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:01:55.442 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,115] ms
+31-Oct-2024 19:01:55.444 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:01:55.462 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1187 ms
+31-Oct-2024 19:04:27.324 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:04:27.326 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:04:27.334 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:04:27.334 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:04:27.338 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:04:27.361 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:04:27.362 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:04:27.362 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:04:27.362 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:04:31.342 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:04:31.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:04:31.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:04:31.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:04:31.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:04:31.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:04:31.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:04:31.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:04:31.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:04:31.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:04:31.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:04:31.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:04:31.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=50785:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:04:31.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:04:31.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:04:31.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:04:31.348 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:04:31.389 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:04:31.409 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 566 ms
+31-Oct-2024 19:04:31.452 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:04:31.452 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:04:31.463 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:04:32.526 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:04:32.588 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,124] ms
+31-Oct-2024 19:04:32.590 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:04:32.611 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1201 ms
+31-Oct-2024 19:06:01.775 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:06:01.777 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:06:01.786 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:06:01.787 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:06:01.792 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:06:01.800 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:12:30.067 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:12:30.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:12:30.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:12:30.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:12:30.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:12:30.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:12:30.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:12:30.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:12:30.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:12:30.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:12:30.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:12:30.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:12:30.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:12:30.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:12:30.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:12:30.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:12:30.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:12:30.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:12:30.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:12:30.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:12:30.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:12:30.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=50866:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:12:30.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:12:30.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:12:30.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:12:30.074 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:12:30.114 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:12:30.133 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 519 ms
+31-Oct-2024 19:12:30.175 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:12:30.176 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:12:30.187 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:12:31.199 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:12:31.256 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,069] ms
+31-Oct-2024 19:12:31.258 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:12:31.279 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1143 ms
+31-Oct-2024 19:15:26.540 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:15:26.542 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:15:26.548 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:15:26.549 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:15:26.553 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:15:26.557 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:15:29.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:15:29.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:15:29.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:15:29.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:15:29.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:15:29.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:15:29.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:15:29.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:15:29.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:15:29.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:15:29.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:15:29.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=51013:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:15:29.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:15:29.105 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:15:29.105 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:15:29.105 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:15:29.152 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:15:29.169 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 552 ms
+31-Oct-2024 19:15:29.211 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:15:29.211 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:15:29.222 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:15:30.265 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:15:30.326 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,103] ms
+31-Oct-2024 19:15:30.327 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:15:30.348 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1177 ms
+31-Oct-2024 19:15:56.523 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:15:56.525 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:15:56.532 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:15:56.533 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:15:56.537 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:15:56.541 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:16:24.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:16:24.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:16:24.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:16:24.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:16:24.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:16:24.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:16:24.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:16:24.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:16:24.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:16:24.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:16:24.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:16:24.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:16:24.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:16:24.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:16:24.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:16:24.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:16:24.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:16:24.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:16:24.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:16:24.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:16:24.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:16:24.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=51051:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:16:24.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:16:24.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:16:24.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:16:24.257 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:16:24.297 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:16:24.318 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 532 ms
+31-Oct-2024 19:16:24.358 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:16:24.359 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:16:24.372 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:16:25.429 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:16:25.493 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,120] ms
+31-Oct-2024 19:16:25.495 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:16:25.512 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1193 ms
+31-Oct-2024 19:17:00.976 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:17:00.979 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:17:00.985 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:17:00.986 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:17:00.989 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:17:01.009 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:17:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:17:03.559 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:17:03.559 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:17:03.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:17:03.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:17:03.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:17:03.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:17:03.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:17:03.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:17:03.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:17:03.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:17:03.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:17:03.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:17:03.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:17:03.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:17:03.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:17:03.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:17:03.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:17:03.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:17:03.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:17:03.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:17:03.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=51115:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:17:03.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:17:03.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:17:03.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:17:03.563 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:17:03.605 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:17:03.625 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 637 ms
+31-Oct-2024 19:17:03.668 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:17:03.668 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:17:03.679 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:17:04.805 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:17:04.876 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,197] ms
+31-Oct-2024 19:17:04.878 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:17:04.903 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1272 ms
+31-Oct-2024 19:18:10.101 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:18:10.107 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:18:10.114 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:18:10.115 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:18:10.118 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:18:10.120 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:18:12.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:18:12.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:18:12.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:18:12.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:18:12.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:18:12.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:18:12.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:18:12.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:18:12.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:18:12.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:18:12.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:18:12.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:18:12.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:18:12.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:18:12.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:18:12.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:18:12.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:18:12.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:18:12.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:18:12.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:18:12.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:18:12.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=51149:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:18:12.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:18:12.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:18:12.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:18:12.695 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:18:12.733 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:18:12.750 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 553 ms
+31-Oct-2024 19:18:12.786 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:18:12.787 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:18:12.798 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:18:13.804 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:18:13.864 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,065] ms
+31-Oct-2024 19:18:13.866 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:18:13.884 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1132 ms
+31-Oct-2024 19:20:35.907 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:20:35.910 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:20:35.918 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:20:35.918 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:20:35.922 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:20:35.952 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:20:35.952 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:20:35.952 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:20:35.953 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:20:35.953 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:20:35.962 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:20:35.962 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:20:35.962 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:20:35.962 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:26:09.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:26:09.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:26:09.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:26:09.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:26:09.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:26:09.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:26:09.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:26:09.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:26:09.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:26:09.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:26:09.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:26:09.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:26:09.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:26:09.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:26:09.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:26:09.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:26:09.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:26:09.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:26:09.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:26:09.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:26:09.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:26:09.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=51278:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:26:09.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:26:09.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:26:09.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:26:09.631 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:26:09.672 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:26:09.689 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 539 ms
+31-Oct-2024 19:26:09.734 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:26:09.734 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:26:09.743 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:26:10.755 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:26:10.815 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,071] ms
+31-Oct-2024 19:26:10.817 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:26:10.833 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1142 ms
+31-Oct-2024 19:27:35.530 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:27:35.532 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:27:35.539 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:27:35.539 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:27:35.543 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:27:35.549 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:27:35.550 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:27:35.550 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:27:35.550 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:27:35.550 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:27:35.551 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:27:35.551 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:27:35.551 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:27:35.551 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1358)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:990)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:28:09.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:28:09.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:28:09.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:28:09.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:28:09.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:28:09.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:28:09.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:28:09.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:28:09.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:28:09.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:28:09.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:28:09.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:28:09.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=51333:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:28:09.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:28:09.030 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:28:09.030 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:28:09.030 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:28:09.079 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:28:09.098 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 572 ms
+31-Oct-2024 19:28:09.138 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:28:09.138 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:28:09.150 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:28:10.204 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:28:10.266 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,115] ms
+31-Oct-2024 19:28:10.267 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:28:10.287 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1184 ms
+31-Oct-2024 19:28:49.778 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:28:49.781 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:28:49.789 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:28:49.790 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:28:49.795 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:28:49.812 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:33:22.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 19:33:22.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 19:33:22.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 19:33:22.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 19:33:22.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 19:33:22.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 19:33:22.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 19:33:22.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 19:33:22.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 19:33:22.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:33:22.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 19:33:22.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 19:33:22.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 19:33:22.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 19:33:22.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 19:33:22.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 19:33:22.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 19:33:22.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 19:33:22.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 19:33:22.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 19:33:22.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 19:33:22.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=51406:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 19:33:22.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 19:33:22.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 19:33:22.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 19:33:22.087 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 19:33:22.130 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:33:22.152 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 536 ms
+31-Oct-2024 19:33:22.196 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 19:33:22.196 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 19:33:22.207 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 19:33:23.235 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 19:33:23.300 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,092] ms
+31-Oct-2024 19:33:23.302 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:33:23.322 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1167 ms
+31-Oct-2024 19:35:21.393 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:35:21.395 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 19:35:21.404 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 19:35:21.405 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 19:35:21.409 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 19:35:21.425 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 21:27:56.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.96
+31-Oct-2024 21:27:56.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 10 2023 14:56:59 UTC
+31-Oct-2024 21:27:56.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.96.0
+31-Oct-2024 21:27:56.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+31-Oct-2024 21:27:56.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2024 21:27:56.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2024 21:27:56.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-22
+31-Oct-2024 21:27:56.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           22.0.2+9-70
+31-Oct-2024 21:27:56.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2024 21:27:56.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 21:27:56.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\xampp\tomcat
+31-Oct-2024 21:27:56.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\xampp\tomcat
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\temp
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\logging.properties
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=49991:C:\Users\ADMIN\IntelliJ IDEA 2024.2.3\bin
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+31-Oct-2024 21:27:56.085 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\git\Git\cmd;C:\Program Files\nodejs\;C:\Users\ADMIN\Downloads\ffmpeg-7.0.1\ffmpeg-7.0.1;C:\Program Files\Docker\Docker\resources\bin\%JAVA_HOME%\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\scoop\shims;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ADMIN\AppData\Local\Programs\Python\Python38\;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Python39\Scripts;C:\Python38\Scripts;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;%PyCharm Community Edition%;C:\Users\ADMIN\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-22\bin;;C:\Program Files\Azure Data Studio\bin;.]
+31-Oct-2024 21:27:56.126 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 21:27:56.141 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 463 ms
+31-Oct-2024 21:27:56.181 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2024 21:27:56.181 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.96]
+31-Oct-2024 21:27:56.189 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml]
+31-Oct-2024 21:27:57.267 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2024 21:27:57.328 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\ADMIN\OneDrive\Máy tính\project\WEB_QLTT_IELTS\.smarttomcat\conf\Catalina\localhost\WEB_QLTT_IELTS.xml] has finished in [1,139] ms
+31-Oct-2024 21:27:57.330 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 21:27:57.346 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1204 ms
+31-Oct-2024 21:28:36.242 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 21:28:36.244 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+31-Oct-2024 21:28:36.247 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [WEB_QLTT_IELTS] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2024 21:28:36.247 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [WEB_QLTT_IELTS] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1570)
+31-Oct-2024 21:28:36.257 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2024 21:28:36.282 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

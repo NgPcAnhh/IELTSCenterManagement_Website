@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STUDENT ACCOUNT</title>
+  <link rel="stylesheet" href="css/AD-INF.css">
+  <link rel="stylesheet" href="css/ad-inf-noti.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+  The Liems - IELTS Center
+  <button class="login-button" onclick="showLogoutConfirmation();">
+    <span class="login-button-top">Log Out</span>
+  </button>
+</div>
+
+<!-- Right side bar -->
+<div class="sidebar">
+  <button id="closeSidebar" class="Sidebarbtn" onclick="chinhSideBar()">
+    <!-- Left arrow -->
+    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124h-604.773963l188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446h604.753497c11.2973 0 20.466124 9.158891 20.466124 20.466124z"></path>
+    </svg>
+  </button>
+
+  <div class="logo"></div>
+  <ul class="menu">
+    <li><a href="ADMIN-INF.html"><img src="https://cdn-icons-png.flaticon.com/128/69/69524.png" alt="Home">Home</a></li>
+    <li><a href="AD-INF-CLASS.html"><img src="https://cdn-icons-png.flaticon.com/128/5404/5404967.png" alt="Class">Class</a></li>
+    <li><a href="AD-INF-ASSIGNMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/171/171322.png" alt="Assignment">Assignment</a></li>
+    <li><a href="AD-INF-MANAGEMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/3033/3033143.png" alt="Wage">Account</a></li>
+    <li><a href="AD-INF-REVENUE.html"><img src="https://cdn-icons-png.flaticon.com/128/10488/10488917.png" alt="Mock Test">Revenue</a></li>
+    <li><a href="AD-INF-TRACKING.html"><img src="https://cdn-icons-png.flaticon.com/128/9080/9080461.png" alt="Notification">Management</a></li>
+    <li><a href="AD-INF-MOCKTEST.html"><img src="https://cdn-icons-png.flaticon.com/128/29/29302.png" alt="Library">Mock Test</a></li>
+    <li><a href="AD-INF-NOTI.html"><img src="https://cdn-icons-png.flaticon.com/128/1827/1827349.png" alt="Library">Notification</a></li>
+    <li><a href="AD-INF-LIB.html"><img src="https://cdn-icons-png.flaticon.com/128/1164/1164651.png" alt="Library">Library</a></li>
+  </ul>
+</div>
+
+<!-- Button to reopen sidebar -->
+<button id="openSidebar" class="Sidebarbtn" onclick="chinhSideBar()" style="display: none; position: fixed; top: 45%; left: 1%; z-index: 1001;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+    <path fill="none" d="M0 0h24v24H0z"/>
+    <path d="M8 5v14l11-7z" fill="currentColor"/>
+  </svg>
+</button>
+
+<!-- Logout Confirmation Dialog -->
+<div class="logout-dialog-overlay" id="logoutDialog">
+  <div class="logout-dialog">
+    <p>Bạn có muốn đăng xuất?</p>
+    <button class="yes" onclick="handleLogout(true)">Yes</button>
+    <button class="no" onclick="handleLogout(false)">No</button>
+  </div>
+</div>
+
+
+<!-- main content -->
+
+<!-- main thanh search và nút tạo thông báo mới -->
+<div class="search-create-container">
+  <input
+          type="text"
+          id="searchInput"
+          placeholder="Tìm kiếm thông báo..."
+          class="search-bar"
+  />
+  <button id="createButton" class="create-button">Tạo thông báo</button>
+</div>
+
+
+<div class="noti-table-container">
+  <table class="noti-table">
+    <thead>
+    <tr>
+        <th>Ảnh</th>
+      <th>ID</th>
+      <th>Tên thông báo</th>
+        <th>Ngày đăng</th>
+        <th>Người viết</th>
+    </tr>
+    </thead>
+    <tbody id="notiTableBody">
+    <!-- Các hàng được thêm động qua JavaScript -->
+    </tbody>
+  </table>
+</div>
+
+<!-- Form Modal -->
+<div id="notificationModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="close-button" onclick="closeModal('notificationModal')">×</button>
+    <h2>Chi Tiết Thông Báo</h2>
+    <form id="notificationForm">
+      <div class="form-group">
+        <label for="notiName">Tên thông báo:</label>
+        <input type="text" id="notiName" name="notiName" required>
+      </div>
+      <div class="form-group">
+        <label for="content">Nội dung:</label>
+        <textarea id="content" name="content" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="picture" class="file-input-label">
+          <span>Thêm ảnh</span>
+          <input type="file" id="picture" name="picture" accept="image/*">
+        </label>
+        <div id="fileNameDisplay" style="margin-top: 8px; font-size: 14px; color: #666;"></div>
+      </div>
+      <div class="form-group">
+        <label for="writterId">ID người viết:</label>
+        <input type="text" id="writterId" name="writterId" required>
+      </div>
+      <div class="button-group">
+        <button type="button" id="previewButton" onclick="showPreview()">Xem trước</button>
+        <button type="button" id="publishButton" onclick="publishNotification()">Xuất bản</button>
+        <button type="button" id="deleteButton" onclick="deleteNotification()">Xóa thông báo</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- Preview Modal -->
+<div id="previewModal" class="modal-overlay preview-modal">
+  <div class="modal-content">
+    <div class="preview-container">
+      <h1 class="preview-title"></h1>
+      <div class="preview-meta">
+        <span class="preview-date"></span>
+        <span class="preview-writer"></span>
+      </div>
+      <div class="preview-image-container">
+        <img id="previewImage" src="" alt="">
+      </div>
+      <div class="preview-content"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Create Notification Modal -->
+<div id="createNotificationModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="close-button" onclick="closeModal('createNotificationModal')">×</button>
+    <h2>Tạo Thông Báo</h2>
+    <form id="createNotificationForm">
+      <div class="form-group">
+        <label for="createNotiName">Tên thông báo:</label>
+        <input type="text" id="createNotiName" name="createNotiName" placeholder="Nhập tên thông báo" required>
+      </div>
+      <div class="form-group">
+        <label for="createContent">Nội dung:</label>
+        <textarea id="createContent" name="createContent" rows="4" placeholder="Nhập nội dung thông báo" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="createPicture">Link ảnh:</label>
+        <input type="text" id="createPicture" name="createPicture" placeholder="Dán link ảnh (nếu có)">
+      </div>
+      <div class="form-group">
+        <label for="createWritterId">ID người viết:</label>
+        <input type="text" id="createWritterId" name="createWritterId" placeholder="Nhập ID người viết" required>
+      </div>
+      <div class="form-group">
+        <label for="createNotiId">ID Thông Báo:</label>
+        <input type="text" id="createNotiId" name="createNotiId" placeholder="Nhập ID thông báo" required>
+      </div>
+      <div class="button-group">
+        <button type="button" id="publishNotificationButton" style="background: #FEB702; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 16px; font-weight: 500; cursor: pointer; transition: all 0.3s ease;">Xuất bản</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Move the script tags to the end of the body -->
+<script src="js/admin-inf-home.js"></script>
+<script src="js/ad-inf-noti.js"></script>
+</body>
+</html>

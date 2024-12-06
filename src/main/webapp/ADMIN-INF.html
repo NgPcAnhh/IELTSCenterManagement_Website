@@ -1,0 +1,120 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STUDENT ACCOUNT</title>
+        <link rel="stylesheet" href="css/AD-INF.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+    <body>
+    <!-- Header -->
+    <div class="header">
+        The Liems - IELTS Center
+        <button class="login-button" onclick="showLogoutConfirmation();">
+            <span class="login-button-top">Log Out</span>
+        </button>
+    </div>
+
+    <!-- Right side bar -->
+    <div class="sidebar">
+        <button id="closeSidebar" class="Sidebarbtn" onclick="chinhSideBar()">
+            <!-- Left arrow -->
+            <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+                <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124h-604.773963l188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446h604.753497c11.2973 0 20.466124 9.158891 20.466124 20.466124z"></path>
+            </svg>
+        </button>
+
+        <div class="logo"></div>
+        <ul class="menu">
+            <li><a href="ADMIN-INF.html"><img src="https://cdn-icons-png.flaticon.com/128/69/69524.png" alt="Home">Home</a></li>
+            <li><a href="AD-INF-CLASS.html"><img src="https://cdn-icons-png.flaticon.com/128/5404/5404967.png" alt="Class">Class</a></li>
+            <li><a href="AD-INF-ASSIGNMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/171/171322.png" alt="Assignment">Assignment</a></li>
+            <li><a href="AD-INF-MANAGEMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/3033/3033143.png" alt="Wage">Account</a></li>
+            <li><a href="AD-INF-REVENUE.html"><img src="https://cdn-icons-png.flaticon.com/128/10488/10488917.png" alt="Mock Test">Revenue</a></li>
+            <li><a href="AD-INF-TRACKING.html"><img src="https://cdn-icons-png.flaticon.com/128/9080/9080461.png" alt="Notification">Management</a></li>
+            <li><a href="AD-INF-MOCKTEST.html"><img src="https://cdn-icons-png.flaticon.com/128/29/29302.png" alt="Library">Mock Test</a></li>
+            <li><a href="AD-INF-NOTI.html"><img src="https://cdn-icons-png.flaticon.com/128/1827/1827349.png" alt="Library">Notification</a></li>
+            <li><a href="AD-INF-LIB.html"><img src="https://cdn-icons-png.flaticon.com/128/1164/1164651.png" alt="Library">Library</a></li>
+        </ul>
+    </div>
+
+    <!-- Button to reopen sidebar -->
+    <button id="openSidebar" class="Sidebarbtn" onclick="chinhSideBar()" style="display: none; position: fixed; top: 45%; left: 1%; z-index: 1001;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M8 5v14l11-7z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <!-- Logout Confirmation Dialog -->
+    <div class="logout-dialog-overlay" id="logoutDialog">
+        <div class="logout-dialog">
+            <p>Bạn có muốn đăng xuất?</p>
+            <button class="yes" onclick="handleLogout(true)">Yes</button>
+            <button class="no" onclick="handleLogout(false)">No</button>
+        </div>
+    </div>
+
+    <div class="container-dad">
+        <div class="container-son1">
+            <!-- Personal Information Section -->
+            <div class="container1">
+                <div class="personal-info">
+                    <div class="avatar"></div>
+                    <div class="info-content">
+                        <h3>Personal Information:</h3>
+                        <ul id="student-info">
+                            <!-- JavaScript will inject worker data here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revenue Chart Section -->
+            <div class="dashboard-container">
+                <div class="chart-container">
+                    <h3>Quarter Revenue Overview (2020 - 2024)</h3>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+                <div class="content-right">
+                    <!-- Additional content can go here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Top 50 Latest Registrations Section -->
+        <div class="container-son2">
+            <div class="chart-container">
+                <h3>Course Sales and Revenue Overview</h3>
+                <canvas id="combinedChart"></canvas>
+            </div>
+
+            <h3>Top 50 Latest Registrations</h3>
+            <div class="table-container">
+                <table id="latestRegistrationsTable">
+                    <thead>
+                    <tr>
+                        <th>Subject ID</th>
+                        <th>Student ID</th>
+                        <th>Time</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Data rows will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/ADMINfetchPieChart.js"></script>
+    <script src="js/admin-inf-home.js"></script>
+    <script src="js/ADMINfetchLatestRegistrations.js"></script>
+    <script src="js/adminWorkerInfo.js"></script>
+    <script src="js/adminRevenueChart.js"></script>
+
+</body>
+</html>

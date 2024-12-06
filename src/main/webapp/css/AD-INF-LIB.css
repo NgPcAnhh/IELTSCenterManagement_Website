@@ -1,0 +1,506 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Container styles */
+.library-container {
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    background-color: #FFF9E6;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.library-content {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Search section styles */
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.search-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-btn:hover {
+    background-color: #ddd;
+}
+
+.add-doc-btn {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.add-doc-btn:hover {
+    background-color: #e68a00;
+}
+
+/* Category styles */
+.category {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.category h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.folder-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+/* 3D Folder styles */
+.file {
+    position: relative;
+    width: 120px; /* Adjusted width */
+    height: 80px; /* Adjusted height */
+    cursor: pointer;
+    transform-origin: bottom;
+    perspective: 1500px;
+    z-index: 50;
+}
+
+/* Thêm style mới cho folder ID */
+.folder-id {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 51; /* Số lớn hơn z-index của .file (50) */
+    color: #fff; /* Màu chữ trắng để dễ đọc */
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Thêm bóng để text dễ đọc hơn */
+}
+.file p {
+    font-size: 12px; /* Adjusted font size */
+    text-align: center;
+    margin-top: 8px;
+    color: #333;
+    opacity: 1;
+    padding-top: 0;
+}
+
+.work-5 {
+    background-color: #d97706;
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    border-radius: 0.8rem;
+    border-top-left-radius: 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.work-5::after {
+    content: '';
+    position: absolute;
+    bottom: 99%;
+    left: 0;
+    width: 40px; /* Adjusted width */
+    height: 8px; /* Adjusted height */
+    background-color: #d97706;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
+.work-5::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 35px; /* Adjusted position */
+    width: 8px; /* Adjusted size */
+    height: 8px;
+    background-color: #d97706;
+    clip-path: polygon(0 35%, 0% 100%, 50% 100%);
+}
+
+.work-4 {
+    position: absolute;
+    inset: 2px; /* Adjusted inset */
+    background-color: #71717a;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+    transform-origin: bottom;
+}
+
+.work-3 {
+    position: absolute;
+    inset: 2px; /* Adjusted inset */
+    background-color: #d4d4d8;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+    transform-origin: bottom;
+}
+
+.work-2 {
+    position: absolute;
+    inset: 2px; /* Adjusted inset */
+    background-color: #e4e4e7;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+    transform-origin: bottom;
+}
+
+.work-1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 78px; /* Adjusted height */
+    background: linear-gradient(to top, #f59e0b, #fbbf24);
+    border-radius: 0.8rem;
+    border-top-right-radius: 0;
+    transition: all 0.3s ease;
+    transform-origin: bottom;
+    display: flex;
+    align-items: flex-end;
+}
+
+.work-1::after {
+    content: '';
+    position: absolute;
+    bottom: 99%;
+    right: 0;
+    width: 80px; /* Adjusted width */
+    height: 8px; /* Adjusted height */
+    background-color: #fbbf24;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
+.work-1::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 78px; /* Adjusted position */
+    width: 6px; /* Adjusted size */
+    height: 6px;
+    background-color: #fbbf24;
+    clip-path: polygon(100% 14%, 50% 100%, 100% 100%);
+}
+
+/* Folder hover animations */
+.file:hover .work-1 {
+    transform: rotateX(-46deg) translateY(1px);
+    box-shadow: inset 0 15px 30px #fbbf24, inset 0 -15px 30px #d97706;
+}
+
+.file:hover .work-2 {
+    transform: rotateX(-38deg);
+}
+
+.file:hover .work-3 {
+    transform: rotateX(-30deg);
+}
+
+.file:hover .work-4 {
+    transform: rotateX(-20deg);
+}
+
+.file:hover .work-5 {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+a
+/* Thêm style mới cho folder ID */
+.folder-id {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 51; /* Số lớn hơn z-index của .file (50) */
+    color: #fff; /* Màu chữ trắng để dễ đọc */
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Thêm bóng để text dễ đọc hơn */
+}
+
+
+
+
+/* Default hidden state */
+.hidden {
+    display: none !important;
+}
+
+/* Overlay layout */
+.form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Changed from flex to none */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* When not hidden, show as flex */
+.form-overlay:not(.hidden) {
+    display: flex;
+}
+/* Gốc màu sắc */
+:root {
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: beige;
+    --main-color: black;
+}
+
+/* Thiết kế form chính */
+.form {
+    width: 350px;
+    padding: 20px;
+    background: #fed200;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+}
+
+/* Tiêu đề của form */
+.title {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.title span {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 17px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Nhóm input */
+.input-group {
+    width: 100%;
+}
+
+/* Input và textarea */
+.input, .textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Textarea */
+.textarea {
+    height: 160px;
+    resize: vertical;
+}
+
+/* Placeholder */
+.input::placeholder, .textarea::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+/* Hiệu ứng khi focus vào input và textarea */
+.input:focus, .textarea:focus {
+    border: 2px solid var(--input-focus);
+}
+
+/* Container cho danh mục */
+.category-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+/* Select dropdown */
+.category-select {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+}
+
+/* Hiển thị các thẻ đã chọn */
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+/* Thẻ danh mục */
+.category-tag {
+    background-color: orange;
+    border: 1px solid var(--main-color);
+    color: black;
+    padding: 3px 8px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+/* Nút xóa thẻ danh mục */
+.category-tag-remove {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Nút xác nhận */
+.button-confirm {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Hiệu ứng khi nhấn nút */
+.button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}
+
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.close-button:hover {
+    color: #f00; /* Change color on hover */
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    max-height: 90%;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-doc-btn {
+    background-color: #feb200;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.delete-doc-btn:hover {
+    background-color: #f99e00;
+}

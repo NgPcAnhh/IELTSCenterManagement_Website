@@ -1,0 +1,144 @@
+/* Khu vực nội dung chính */
+/* Header */
+.header {
+    margin: 0; /* Ensure no margin */
+}
+
+/* Main content area */
+.main-container {
+    margin-left: 220px;
+    padding: 0 20px 20px 20px; /* Only side and bottom padding */
+    width: calc(100% - 220px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.outer-container-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+    margin-top: 0; /* Remove top margin */
+}
+.large-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 1%;
+}
+
+.small-box-name {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.box-select-name {
+    flex: 1;
+    padding: 50px;
+    border-radius: 15px;
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: left;
+    font-size: 32px;
+    width: 500%; /* Keep doubled width */
+}
+
+/* Container ngoài thứ hai */
+.outer-container-2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.box-assignment-details {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.box-feedback {
+    padding: 60px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    height: 100%; /* Double the height */
+}
+
+.box-hand-on {
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    position: fixed;
+    left: 240px;
+    bottom: 20px;
+}
+.submit-button:hover {
+    background-color:  #FEB702;
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    background-color: orange;
+    transform: scale(1);
+}
+
+
+#assignmentTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#assignmentTable th, #assignmentTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#assignmentTable th {
+    background-color: #FFA500;
+    color: #333;
+    font-weight: bold;
+}
+
+#assignmentTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#assignmentTable tr:hover {
+    background-color: #e9e9e9;
+}
+
+#assignmentTable td {
+    text-align: left;
+}
+

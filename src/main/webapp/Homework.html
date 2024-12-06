@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STUDENT ACCOUNT</title>
+  <link rel="stylesheet" href="css/STU-INF.css">
+  <link rel="stylesheet" href="css/homework.css">
+  <link rel="stylesheet" href="css/homework_layout.css">
+
+
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+  The Liems - IELTS Center
+  <button class="login-button" onclick="showLogoutConfirmation();">
+    <span class="login-button-top">Log Out</span>
+  </button>
+</div>
+
+<!-- Right side bar -->
+<div class="sidebar">
+  <button id="closeSidebar" class="Sidebarbtn" onclick="chinhSideBar()">
+    <!-- Left arrow -->
+    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124h-604.773963l188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446h604.753497c11.2973 0 20.466124 9.158891 20.466124 20.466124z"></path>
+    </svg>
+  </button>
+
+  <div class="logo">
+  </div>
+  <ul class="menu">
+    <li><a href="STU-INF.html"><img src="https://cdn-icons-png.flaticon.com/128/69/69524.png" alt="Home"> Home</a></li>
+    <li><a href="STU-INF-CLASS.html"><img src="https://cdn-icons-png.flaticon.com/128/5404/5404967.png" alt="Class"> Class</a></li>
+    <li><a href="STU-INF-ASSIGNMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/171/171322.png" alt="Assignment"> Assignment</a></li>
+    <li><a href="STU-INF-PROCESS.html"><img src="https://cdn-icons-png.flaticon.com/128/3078/3078984.png" alt="Wage">Process</a></li>
+    <li><a href="STU-INF-MT.html"><img src="https://cdn-icons-png.flaticon.com/128/10488/10488917.png" alt="Mock Test"> Mock Test</a></li>
+    <li><a href="STU-INF-NOTI.html"><img src="https://cdn-icons-png.flaticon.com/128/1827/1827349.png" alt="Notification"> Notification</a></li>
+    <li><a href="STU-INF-LIBRARY"><img src="https://cdn-icons-png.flaticon.com/128/29/29302.png" alt="Library"> Library</a></li>
+  </ul>
+</div>
+
+<!-- Button to reopen sidebar -->
+<button id="openSidebar" class="Sidebarbtn" onclick="chinhSideBar()" style="display: none; position: fixed; top: 45%; left: 1%; z-index: 1001;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+    <path fill="none" d="M0 0h24v24H0z"/>
+    <path d="M8 5v14l11-7z" fill="currentColor"/>
+  </svg>
+</button>
+
+
+
+
+<div class="main-container">
+  <!-- Profile Section -->
+  <div class="outer-container-1">
+    <div class="box-select-name"></div>
+    <div class="logo"></div>
+    <div class="large-container">
+      <div class="profile-icon">
+        <img src="https://cdn-icons-png.flaticon.com/128/206/206897.png" alt="Profile Icon" style="display: none;">
+        <img src="https://cdn-icons-png.flaticon.com/128/3426/3426666.png" alt="Profile Icon" style="display: none;">
+      </div>
+      <div class="small-box-name"></div>
+    </div>
+  </div>
+
+  <div class="outer-container-2">
+    <div class="box-assignment-details">
+      <table id="assignmentTable">
+        <thead>
+        <tr>
+          <th>HW Name</th>
+          <th>Deadline</th>
+          <th>Checking</th>
+          <th>Hand on</th>
+          <th>Submit time</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="box-feedback">FEEDBACKS: </div>
+<div class="box-hand-on" style="font-style: italic; text-decoration: underline; color: deepskyblue;"></div>
+    <button class="submit-button">SUBMIT</button>
+  </div>
+</div>
+
+<!-- Popup Overlay for Upload -->
+<div class="popup-overlay" id="popupOverlay" style="display: none;">
+  <div class="popup-content">
+    <h3>Upload file here</h3>
+    <div class="upload-box" id="uploadBox">
+      <div class="upload-icon">
+        <img src="https://cdn-icons-png.flaticon.com/128/1156/1156975.png" alt="Upload Icon">
+      </div>
+      <p>Browse File to upload!</p>
+      <input type="file" id="fileInput" style="display: none;">
+      <p class="file-status">Not selected file</p>
+      <div class="upload-actions">
+        <button onclick="document.getElementById('fileInput').click();">Choose File</button>
+        <button onclick="clearFileSelection();">Clear</button>
+      </div>
+    </div>
+    <p>Or copy link</p>
+    <input type="text" placeholder="Paste link here" id="linkInput">
+    <button class="popup-submit">Submit</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('popupOverlay').addEventListener('click', function(event) {
+    if (event.target === this) {
+      closePopup();
+    }
+  });
+
+  const fileInput = document.getElementById('fileInput');
+  const fileStatus = document.querySelector('.file-status');
+  const linkInput = document.getElementById('linkInput');
+  const uploadBox = document.getElementById('uploadBox');
+
+  fileInput.addEventListener('change', () => {
+    if (fileInput.files.length > 0) {
+      const fileName = fileInput.files[0].name;
+      fileStatus.textContent = `Selected file: ${fileName}`;
+      linkInput.value = fileName;
+    }
+  });
+
+  function clearFileSelection() {
+    fileInput.value = '';
+    fileStatus.textContent = 'Not selected file';
+    linkInput.value = '';
+  }
+</script>
+<script src="js/submitAssignment.js"></script>
+<script src ='js/homework.js'></script>
+<script src ='js/stu-inf-home.js'></script>
+</body>
+</html>

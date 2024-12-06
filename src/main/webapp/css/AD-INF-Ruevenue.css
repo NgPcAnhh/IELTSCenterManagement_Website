@@ -1,0 +1,358 @@
+.TableBill {
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.TableBill h2 {
+    text-align: center;
+}
+
+.TableBill form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.TableBill label,
+.TableBill input {
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #FEB702;
+    color: black;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+}
+
+.TableBill button {
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color:#FEB702;
+    color: black;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 6px 0px #FEB702;
+    transition: all 0.1s;
+}
+
+.TableBill button:active {
+    box-shadow: 0px 2px 0px #FEB702;
+    position: relative;
+    top: 2px;
+}
+
+.bangbills {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 10% auto;
+    text-align: center;
+
+}
+
+.bangbills th {
+    background-color: #FFB72B;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.bangbills td {
+    padding: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.bangbills tr:nth-child(even) {
+    background-color: #FFF2E0;
+}
+
+.bangbills tr:nth-child(odd) {
+    background-color: white;
+}
+
+.bangbills td,
+.bangbills th {
+    border: 1px solid #E0E0E0;
+}
+
+.total-revenue {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left:500px;
+    margin-bottom: 1%;
+}
+
+.total-revenue div {
+    border: 1px solid #B0B0B0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1%;
+    background-color: #FEB702;
+    color: #000000;
+    font-weight: bold;
+}
+.table-title {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.bangchiphi {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10%;
+    border: 1px solid black;
+}
+
+.bangchiphi th {
+    background-color: #FFB72B; /* Keep the orange color theme */
+    color: black;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+
+}
+
+.bangchiphi td {
+    background-color: #ffffff; /* Dark background for rows */
+    color: #090909; /* White text color for readability */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.bangchiphi input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    color: #090909;
+    background-color: #F9F9F9;
+    border: none;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.bangchiphi tfoot th {
+    background-color: #FFB72B;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+
+
+
+
+.charts-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10%;
+    width: 80%; /* Container chiếm 80% chiều rộng màn hình */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* Điều chỉnh kích thước để tạo không gian cho khung */
+    background-color: white; /* Nền trắng cho biểu đồ */
+    padding: 20px;
+    border-radius: 15px; /* Khung bo tròn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng để thêm chiều sâu */
+}
+
+.chart-title {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#revenueChart {
+    width: 100% !important;
+    max-width: 800px; /* Chiều ngang giữ nguyên */
+    max-height: 800px; /* Tăng chiều cao */
+    margin-top: 20px; /* Đẩy biểu đồ xuống bằng margin-top */
+}
+
+
+#revenuePieChart {
+    width: 100% !important;
+    max-width: 500px; /* Đảm bảo biểu đồ tròn lớn hơn */
+    max-height: 500px; /* Đảm bảo tỷ lệ 1:1 cho biểu đồ tròn */
+}
+
+
+
+
+
+#exportReportButton {
+    margin: 10% auto 5%;
+    position: relative;
+    padding: 12px 35px;
+    background: #fec195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #fec195;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#exportReportButton:hover {
+    background: #ffffff;
+    color: #181818;
+    border: 3px solid #FEB702;
+}
+
+.star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #FEB702); /* Thay đổi màu ở đây */
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #FEB702); /* Thay đổi màu ở đây */
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #FEB702); /* Thay đổi màu ở đây */
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #FEB702); /* Thay đổi màu ở đây */
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #FEB702); /* Thay đổi màu ở đây */
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #FEB702); /* Thay đổi màu ở đây */
+    z-index: -5;
+    transition: all 0.8s ease;
+}
+
+/* Hover states */
+#exportReportButton:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #FEB702); /* Thay đổi màu ở đây */
+    z-index: 2;
+}
+
+#exportReportButton:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #FEB702); /* Thay đổi màu ở đây */
+    z-index: 2;
+}
+
+#exportReportButton:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #FEB702); /* Thay đổi màu ở đây */
+    z-index: 2;
+}
+
+#exportReportButton:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #FEB702); /* Thay đổi màu ở đây */
+    z-index: 2;
+}
+
+#exportReportButton:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #FEB702); /* Thay đổi màu ở đây */
+    z-index: 2;
+}
+
+#exportReportButton:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #FEB702); /* Thay đổi màu ở đây */
+    z-index: 2;
+}
+
+.fil0 {
+    fill: #FEB702; /* Thay đổi màu chính của sao ở đây */
+}
+

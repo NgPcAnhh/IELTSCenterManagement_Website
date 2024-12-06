@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT ACCOUNT</title>
+    <link rel="stylesheet" href="css/STU-INF.css">
+    <link rel="stylesheet" href="css/stu-inf-lib.css">
+
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    The Liems - IELTS Center
+    <button class="login-button" onclick="showLogoutConfirmation();">
+        <span class="login-button-top">Log Out</span>
+    </button>
+</div>
+
+<!-- Right side bar -->
+<div class="sidebar">
+    <button id="closeSidebar" class="Sidebarbtn" onclick="chinhSideBar()">
+        <!-- Left arrow -->
+        <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+            <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124h-604.773963l188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446h604.753497c11.2973 0 20.466124 9.158891 20.466124 20.466124z"></path>
+        </svg>
+    </button>
+
+    <div class="logo">
+    </div>
+    <ul class="menu">
+        <li><a href="STU-INF.html"><img src="https://cdn-icons-png.flaticon.com/128/69/69524.png" alt="Home"> Home</a></li>
+        <li><a href="STU-INF-CLASS.html"><img src="https://cdn-icons-png.flaticon.com/128/5404/5404967.png" alt="Class"> Class</a></li>
+        <li><a href="STU-INF-ASSIGNMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/171/171322.png" alt="Assignment"> Assignment</a></li>
+        <li><a href="STU-INF-PROCESS.html"><img src="https://cdn-icons-png.flaticon.com/128/3078/3078984.png" alt="Wage">Process</a></li>
+        <li><a href="STU-INF-MT.html"><img src="https://cdn-icons-png.flaticon.com/128/10488/10488917.png" alt="Mock Test"> Mock Test</a></li>
+        <li><a href="STU-INF-NOTI.html"><img src="https://cdn-icons-png.flaticon.com/128/1827/1827349.png" alt="Notification"> Notification</a></li>
+        <li><a href="STU-INF-LIBRARY.html"><img src="https://cdn-icons-png.flaticon.com/128/29/29302.png" alt="Library"> Library</a></li>
+    </ul>
+</div>
+
+<!-- Button to reopen sidebar -->
+<button id="openSidebar" class="Sidebarbtn" onclick="chinhSideBar()" style="display: none; position: fixed; top: 45%; left: 1%; z-index: 1001;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M8 5v14l11-7z" fill="currentColor"/>
+    </svg>
+</button>
+
+<!-- Logout Confirmation Dialog -->
+<div class="logout-dialog-overlay" id="logoutDialog">
+    <div class="logout-dialog">
+        <p>Bạn có muốn đăng xuất?</p>
+        <button class="yes" onclick="handleLogout(true)">Yes</button>
+        <button class="no" onclick="handleLogout(false)">No</button>
+    </div>
+</div>
+
+<!-- Search bar -->
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="performSearch()">Search</button>
+</div>
+
+
+
+
+<!-- Main content -->
+<div class="section-container">
+    <h2 class="section-title">Reading</h2>
+    <div class="cards-container">
+        <!-- Add more reading cards as needed -->
+    </div>
+</div>
+
+<!-- Listening Section -->
+<div class="section-container">
+    <h2 class="section-title">Listening</h2>
+    <div class="cards-container">
+        <!-- Add listening cards here -->
+    </div>
+</div>
+
+<!-- Writing Section -->
+<div class="section-container">
+    <h2 class="section-title">Writing</h2>
+    <div class="cards-container">
+        <!-- Add writing cards here -->
+    </div>
+</div>
+
+<!-- Speaking Section -->
+<div class="section-container">
+    <h2 class="section-title">Speaking</h2>
+    <div class="cards-container">
+        <!-- Add speaking cards here -->
+    </div>
+</div>
+
+<!-- Other Section -->
+<div class="section-container">
+    <h2 class="section-title">Other</h2>
+    <div class="cards-container">
+        <!-- Add other cards here -->
+    </div>
+</div>
+
+
+<!-- Layout ẩn hiển thị chi tiết tài liệu -->
+<div class="book-card-overlay">
+    <div class="book-card">
+        <button class="book-card-close">&times;</button>
+        <div class="book-header">
+            <h1 class="book-title"></h1>
+            <span class="book-id"></span>
+        </div>
+
+        <div class="book-meta">
+            <div class="meta-item">
+                <div class="meta-label">Author</div>
+                <div class="meta-value"></div>
+            </div>
+
+            <div class="meta-item">
+                <div class="meta-label">Upload Date</div>
+                <div class="meta-value"></div>
+            </div>
+        </div>
+
+        <div class="book-description">
+            <div class="meta-label">Description</div>
+            <p></p>
+        </div>
+
+        <div class="meta-item">
+            <div class="meta-label">Categories</div>
+            <div class="categories"></div>
+        </div>
+
+        <div class="meta-item">
+            <div class="meta-label">Resource Link</div>
+            <a href="#" class="file-link" target="_blank">Download</a>
+        </div>
+    </div>
+</div>
+
+
+
+<script src ='js/stu-inf-lib.js'></script>
+<script src ='js/stu-inf-home.js'></script>
+</body>
+</html>

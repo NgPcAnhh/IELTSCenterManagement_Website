@@ -1,0 +1,70 @@
+.homeworks-list {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Homework-Table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#Homework-Table th, #Homework-Table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#Homework-Table th {
+    background-color: orange;
+    color: white;
+}
+
+#Homework-Table tr:hover {
+    background-color:white;
+}
+
+.container-2button {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.button-1, .button-2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-1 {
+    background-color: white;
+    color: black;
+    border: 1px solid black; /* Add solid black border */
+}
+
+.button-2 {
+    background-color: white;
+    color: black;
+    border: 1px solid black; /* Add solid black border */
+}
+.button-1:hover, .button-2:hover {
+    opacity: 0.8;
+    background-color: #FFA500; /* Change hover background color */
+    color: white; /* Change hover text color */
+}
+
+
+
+#Homework-Table a {
+    color: #007bff; /* Màu của liên kết */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+#Homework-Table a:hover {
+    text-decoration: underline; /* Hiển thị gạch chân khi hover */
+    color: #0056b3;
+}

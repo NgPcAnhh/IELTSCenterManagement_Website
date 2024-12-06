@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang=vi>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOCKTEST MANAGMENT</title>
+  <link rel="stylesheet" href="css/ADMIN-INF-MT.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+  The Liems - IELTS Center
+  <button class="login-button" onclick="showLogoutConfirmation();">
+    <span class="login-button-top">Log Out</span>
+  </button>
+</div>
+
+<!-- Right side bar -->
+<div class="sidebar">
+  <button id="closeSidebar" class="Sidebarbtn" onclick="chinhSideBar()">
+    <!-- Left arrow -->
+    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+      <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124h-604.773963l188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446h604.753497c11.2973 0 20.466124 9.158891 20.466124 20.466124z"></path>
+    </svg>
+  </button>
+
+  <div class="logo">
+  </div>
+  <ul class="menu">
+    <li><a href="ADMIN-INF.html"><img src="https://cdn-icons-png.flaticon.com/128/69/69524.png" alt="Home">Home</a></li>
+    <li><a href="AD-INF-CLASS.html"><img src="https://cdn-icons-png.flaticon.com/128/5404/5404967.png" alt="Class">Class</a></li>
+    <li><a href="AD-INF-ASSIGNMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/171/171322.png" alt="Assignment">Assignment</a></li>
+    <li><a href="AD-INF-MANAGEMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/3033/3033143.png" alt="Wage">Account</a></li>
+    <li><a href="AD-INF-REVENUE.html"><img src="https://cdn-icons-png.flaticon.com/128/10488/10488917.png" alt="Mock Test">Revenue</a></li>
+    <li><a href="AD-INF-TRACKING.html"><img src="https://cdn-icons-png.flaticon.com/128/9080/9080461.png" alt="Notification">Management</a></li>
+    <li><a href="AD-INF-MOCKTEST.html"><img src="https://cdn-icons-png.flaticon.com/128/29/29302.png" alt="Library">Mock Test</a></li>
+    <li><a href="AD-INF-NOTI.html"><img src="https://cdn-icons-png.flaticon.com/128/1827/1827349.png" alt="Library">Notification</a></li>
+    <li><a href="AD-INF-LIB.html"><img src="https://cdn-icons-png.flaticon.com/128/1164/1164651.png" alt="Library">Library</a></li>
+  </ul>
+</div>
+
+<!-- Button to reopen sidebar -->
+<button id="openSidebar" class="Sidebarbtn" onclick="chinhSideBar()" style="display: none; position: fixed; top: 45%; left: 1%; z-index: 1001;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+    <path fill="none" d="M0 0h24v24H0z"/>
+    <path d="M8 5v14l11-7z" fill="currentColor"/>
+  </svg>
+</button>
+
+<!-- Logout Confirmation Dialog -->
+<div class="logout-dialog-overlay" id="logoutDialog">
+  <div class="logout-dialog">
+    <p>Bạn có muốn đăng xuất?</p>
+    <button class="yes" onclick="handleLogout(true)">Yes</button>
+    <button class="no" onclick="handleLogout(false)">No</button>
+  </div>
+</div>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search mock tests...">
+  <button onclick="searchMocktests()">Search</button>
+</div>
+
+<div id="mockTestContainer">
+  <h2>Mock Test List</h2>
+  <button class="add-mocktest-btn" onclick="openAddMockTestPopup()">Add Mock Test</button>
+  <table id="mockTestTable">
+    <thead>
+    <tr>
+      <th>STUDENT ID</th>
+      <th>ID Test</th>
+      <th>Date</th>
+      <th>Reading</th>
+      <th>Listening</th>
+      <th>Writing</th>
+      <th>Speaking</th>
+      <th>Overall</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="mockTestTableBody"></tbody>
+  </table>
+</div>
+
+<!-- Popup cho Edit Mock Test -->
+<div id="mockTestPopup" class="popup-overlay" onclick="closePopupOverlay(event)">
+  <div class="popup-content">
+    <h3 id="popupTitle">Edit Mock Test</h3>
+    <form id="mockTestForm">
+      <label>Student ID:</label><input type="text" id="mockTestStudentId" required readonly><br>
+      <label>ID Test:</label><input type="text" id="mockTestIdTest" required readonly><br>
+      <label>Date:</label><input type="date" id="mockTestDate" required><br>
+      <label>Reading:</label><input type="number" id="mockTestReading"><br>
+      <label>Listening:</label><input type="number" id="mockTestListening"><br>
+      <label>Writing:</label><input type="number" id="mockTestWriting"><br>
+      <label>Speaking:</label><input type="number" id="mockTestSpeaking"><br>
+      <label>Overall:</label><input type="number" id="mockTestOverall"><br>
+      <label>Reading Feedback:</label><input type="text" id="feedbackReading"><br>
+      <label>Listening Feedback:</label><input type="text" id="feedbackListening"><br>
+      <label>Writing Feedback:</label><input type="text" id="feedbackWriting"><br>
+      <label>Speaking Feedback:</label><input type="text" id="feedbackSpeaking"><br>
+      <button type="button" id="saveButton">Save</button>
+      <button type="button" onclick="closePopup()">Cancel</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<!-- Feedback Popup Layout -->
+<div class="popup-overlay" id="feedbackPopup" style="display: none;">
+  <div class="popup-content">
+    <h3>Feedback Details</h3>
+    <ul id="feedbackList">
+      <!-- Feedback details will be populated here -->
+    </ul>
+    <button onclick="closeFeedbackPopup()">Close</button>
+  </div>
+</div>
+
+
+
+<div id="dashboardContainer">
+  <div class="chart-container">
+    <canvas id="top10OverallChart"></canvas>
+  </div>
+  <div class="table-container">
+    <h2>Top 10 Students</h2>
+    <table id="top10OverallTable">
+      <thead>
+      <tr>
+        <th>Student_ID</th>
+        <th>Student_Name</th>
+        <th>Phone_number</th>
+        <th>Gmail</th>
+      </tr>
+      </thead>
+      <tbody id="top1OverallTableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<!-- JavaScript files -->
+<script src="js/admin-inf-home.js"></script>
+<script src="js/AdminMockTest.js"></script> <!-- Gọi đúng file mockTest.js -->
+</body>
+</html>

@@ -1,0 +1,500 @@
+/* General styles */
+body {
+    margin: 0;
+    background-color: #FFF9E6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header styles */
+.header {
+    background-color: #FEB702;
+    color: black;
+    text-align: center;
+    padding: 1vw 2vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Menu button styles */
+.menu-button {
+    position: fixed;
+    top: 1vh;
+    left: 1vh;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    width: 4vw;
+    height: 4vw;
+}
+
+.menu-icon {
+    left: -10%;
+    width: 140%;
+    height: 110%;
+    display: block;
+    transform: translate(-15px, -5px);
+}
+
+/* Login button styles */
+.login-button {
+    --button_radius: 0.75em;
+    --button_color: black;
+    --button_outline_color: #FEB702;
+
+    position: absolute;
+    top: 50%;
+    right: 2vw;
+    transform: translateY(-50%);
+    font-size: 1.25vw;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.login-button-top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 1vh 2vw;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-50%) scale(1.05);
+}
+
+.login-button:hover .login-button-top {
+    background: var(--button_outline_color);
+    color: var(--button_color);
+}
+
+/* Sidebar container */
+.sidebar {
+    width: 200px; /* Fixed width for the sidebar */
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Sticks the sidebar to the left side of the viewport */
+    top: 0;
+    left: 0;
+    background-color: #FEB702; /* Sidebar background color */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding-top: 20px; /* Top padding for some spacing */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box; /* Include padding and border in total width/height */
+    z-index: 1000; /* Ensure the sidebar stays on top of other elements */
+    transition: transform 0.5s ease; /* Smooth open/close transition */
+}
+
+/* Sidebar closed state */
+.sidebar.closed {
+    transform: translateX(-100%); /* Slide sidebar out of view when closed */
+}
+
+/* Sidebar child elements */
+.sidebar > * {
+    max-width: 100%; /* Ensures child elements do not exceed sidebar width */
+    box-sizing: border-box; /* Includes padding and border in width calculations */
+    padding-left: 10px; /* Optional padding for left alignment */
+    padding-right: 10px; /* Optional padding for right alignment */
+}
+
+/* Sidebar button styles */
+.Sidebarbtn {
+    background-color: #FEB702;
+    color: white;
+    padding: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.Sidebarbtn:hover {
+    background-color: #FEB702;
+    transform: scale(1.05);
+}
+
+#openSidebar {
+    position: fixed;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-top: 0; /* Remove any existing margin-top */
+}
+/* SVG styles */
+button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+
+/* Sidebar menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.menu li {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #FEB702;
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu li a img {
+    width: 30px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover img {
+    transform: scale(1.2);
+}
+
+
+.main {
+    flex: 1;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    transition: margin-left 0.3s ease;
+}
+
+.main.shifted {
+    margin-left: 0;
+}
+
+.logo img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Menu styles */
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.menu li {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #FEB702;
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu li a img {
+    width: 30px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover img {
+    transform: scale(1.2);
+}
+
+/* Sidebar button styles */
+.Sidebarbtn {
+    background-color: #FEB702;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.Sidebarbtn:hover {
+    background-color: #FEB702;
+    transform: scale(1.05);
+}
+
+#openSidebar {
+    margin-top: 60px;
+}
+
+/* SVG styles */
+button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+
+/* Contact styles */
+.contact {
+    position: fixed;
+    top: 85%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.social_icon {
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social_icon:hover {
+    transform: scale(1.3) translateX(-10px);
+    background-color: #f0f0f0;
+}
+
+.social_icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Styles for the logout confirmation dialog */
+.logout-dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.logout-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    text-align: center;
+}
+
+.logout-dialog p {
+    margin-bottom: 20px;
+}
+
+.logout-dialog button {
+    margin: 0 10px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-dialog button.yes {
+    background-color: #dc3545;
+    color: white;
+}
+
+.logout-dialog button.no {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Căn giữa và mở rộng bảng */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.centered-table {
+    width: 80%; /* Tăng độ rộng bảng lên 80% của màn hình */
+    border-collapse: collapse; /* Gộp các đường viền vào để hiển thị rõ hơn */
+}
+
+/* Căn giữa và thêm khoảng cách trong các ô của bảng */
+.centered-table th, .centered-table td {
+    text-align: center;
+    padding: 15px; /* Thêm khoảng đệm để dễ đọc hơn */
+    font-size: 16px; /* Tăng kích thước chữ để rõ hơn */
+}
+
+/* Đặt chiều rộng tối thiểu cho các cột để hiển thị chữ đầy đủ */
+.centered-table th:nth-child(1), .centered-table td:nth-child(1) {
+    width: 15%; /* ID cột */
+}
+
+.centered-table th:nth-child(2), .centered-table td:nth-child(2) {
+    width: 35%; /* Tên tài khoản */
+}
+
+.centered-table th:nth-child(3), .centered-table td:nth-child(3) {
+    width: 25%; /* Mật khẩu */
+}
+
+.centered-table th:nth-child(4), .centered-table td:nth-child(4) {
+    width: 25%; /* Thao tác */
+}
+
+/* Styles for the logout confirmation dialog */
+.logout-dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.logout-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    text-align: center;
+}
+
+.logout-dialog p {
+    margin-bottom: 20px;
+}
+
+.logout-dialog button {
+    margin: 0 10px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-dialog button.yes {
+    background-color: #dc3545;
+    color: white;
+}
+
+.logout-dialog button.no {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Table row styles */
+#accountTableBody tr:nth-child(even) {
+    background-color: #FFEFD5;
+}
+
+#accountTableBody tr:nth-child(odd) {
+    background-color: #FFF8DC;
+}
+
+
+.search-button {
+    padding: 1px 5px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: white;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    border: solid black;
+}
+
+.search-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #FEB702;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+}
+
+.search-button:hover {
+    color: black;
+}
+
+.search-button:hover::before {
+    width: 100%;
+}

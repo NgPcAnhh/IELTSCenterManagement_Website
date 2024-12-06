@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT ACCOUNT</title>
+    <link rel="stylesheet" href="css/AD-INF-Tracking.css">
+    <script src="js/restricted-check.js"></script>
+
+
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    The Liems - IELTS Center
+    <button class="login-button" onclick="showLogoutConfirmation();">
+        <span class="login-button-top">Log Out</span>
+    </button>
+</div>
+
+<!-- Right side bar -->
+<div class="sidebar">
+    <button id="closeSidebar" class="Sidebarbtn" onclick="chinhSideBar()">
+        <!-- Left arrow -->
+        <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+            <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124h-604.773963l188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446h604.753497c11.2973 0 20.466124 9.158891 20.466124 20.466124z"></path>
+        </svg>
+    </button>
+
+    <div class="logo">
+    </div>
+    <ul class="menu">
+        <li><a href="ADMIN-INF.html"><img src="https://cdn-icons-png.flaticon.com/128/69/69524.png" alt="Home">Home</a></li>
+        <li><a href="AD-INF-CLASS.html"><img src="https://cdn-icons-png.flaticon.com/128/5404/5404967.png" alt="Class">Class</a></li>
+        <li><a href="AD-INF-ASSIGNMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/171/171322.png" alt="Assignment">Assignment</a></li>
+        <li><a href="AD-INF-MANAGEMENT.html"><img src="https://cdn-icons-png.flaticon.com/128/3033/3033143.png" alt="Wage">Account</a></li>
+        <li><a href="AD-INF-REVENUE.html"><img src="https://cdn-icons-png.flaticon.com/128/10488/10488917.png" alt="Mock Test">Revenue</a></li>
+        <li><a href="AD-INF-TRACKING.html"><img src="https://cdn-icons-png.flaticon.com/128/9080/9080461.png" alt="Notification">Management</a></li>
+        <li><a href="AD-INF-MOCKTEST.html"><img src="https://cdn-icons-png.flaticon.com/128/29/29302.png" alt="Library">Mock Test</a></li>
+        <li><a href="AD-INF-NOTI.html"><img src="https://cdn-icons-png.flaticon.com/128/1827/1827349.png" alt="Library">Notification</a></li>
+        <li><a href="AD-INF-LIB.html"><img src="https://cdn-icons-png.flaticon.com/128/1164/1164651.png" alt="Library">Library</a></li>
+    </ul>
+</div>
+
+<!-- Button to reopen sidebar -->
+<button id="openSidebar" class="Sidebarbtn" onclick="chinhSideBar()" style="display: none; position: fixed; top: 45%; left: 1%; z-index: 1001;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M8 5v14l11-7z" fill="currentColor"/>
+    </svg>
+</button>
+
+<!-- Logout Confirmation Dialog -->
+<div class="logout-dialog-overlay" id="logoutDialog">
+    <div class="logout-dialog">
+        <p>Bạn có muốn đăng xuất?</p>
+        <button class="yes" onclick="handleLogout(true)">Yes</button>
+        <button class="no" onclick="handleLogout(false)">No</button>
+    </div>
+</div>
+
+
+
+<!-- Main-->
+<!-- Search bar -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Nhập dữ liệu để tìm kiếm">
+    <button onclick="searchStudent()">Search</button>
+</div>
+
+<!-- Student table -->
+<div class="table-container">
+    <table>
+        <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Date of Birth</th>
+            <th>ID</th>
+            <th>Phone Number</th>
+            <th>Gmail</th>
+            <th>Parent Name</th>
+            <th>Parent Number</th>
+            <th>Ma Mon</th>
+            <th>Ma Mon 1</th>
+            <th>Ma Mon 2</th>
+            <th>SS1</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Row 1: Empty row for search results -->
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Confirm change button -->
+<div style="text-align: center; margin-top: 20px;">
+    <button class="confirm-change-button" onclick="confirmChange()">Confirm Change</button>
+</div>
+
+<!-- thống kê đơn đăng kí -->
+<div class="registration-table-container">
+    <h2 style="text-align: center;">Đơn đăng kí đang trong hàng chờ</h2>
+    <div class="table-wrapper">
+        <table class="registration-table">
+            <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Phone Number</th>
+                <th>Date of Birth</th>
+                <th>Email</th>
+                <th>Class ID</th>
+                <th>More Information</th>
+            </tr>
+            </thead>
+            <tbody id="registration-data-table-body">
+            <!-- Rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <button class="create-account-button form-create-account-button">Create Account</button>
+  </div>
+
+    <div class="form-modal-overlay hidden">
+        <div class="form-modal">
+            <div class="form-modal-header">
+                <h2 class="form-modal-title">Đăng ký thông tin học sinh</h2>
+                <button class="form-close-button">&times;</button>
+            </div>
+
+            <!-- Form chỉnh sửa với id và name đầy đủ -->
+            <form id="studentForm" class="form-container" method="POST">
+                <p class="form-note">(*) Trường bắt buộc</p>
+                <div class="form-grid">
+                    <!-- Cột thông tin học sinh -->
+                    <div>
+                        <div class="form-group">
+                            <label class="form-label form-required">Họ và tên học sinh</label>
+                            <input type="text" class="form-input" name="studentName" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label form-required">Ngày sinh</label>
+                            <input type="date" class="form-input" name="dateOfBirth" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label form-required">ID</label>
+                            <input type="text" class="form-input" name="studentId" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label form-required">Số điện thoại</label>
+                            <input type="tel" class="form-input" name="phoneNumber" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label form-required">Email</label>
+                            <input type="email" class="form-input" name="email" required>
+                        </div>
+                    </div>
+
+                    <!-- Cột thông tin phụ huynh -->
+                    <div>
+                        <div class="form-group">
+                            <label class="form-label form-required">Tên phụ huynh</label>
+                            <input type="text" class="form-input" name="parentName" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label form-required">Số điện thoại phụ huynh</label>
+                            <input type="tel" class="form-input" name="parentPhoneNumber" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mã môn</label>
+                            <input type="text" class="form-input" name="subject1">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mã môn 1</label>
+                            <input type="text" class="form-input" name="subject2">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mã môn 2</label>
+                            <input type="text" class="form-input" name="subject3">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label form-required">SS1</label>
+                            <input type="text" class="form-input" name="ss1" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phần tài khoản -->
+                <div class="form-account-section">
+                    <h3 class="form-account-title">Thông tin tài khoản</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label form-required">Tài khoản</label>
+                            <input type="text" class="form-input" name="accountUsername" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label form-required">Mật khẩu</label>
+                            <input type="password" class="form-input" name="accountPassword" required minlength="1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nút bấm -->
+                <div class="form-button-group">
+                    <button type="button" class="form-btn form-btn-cancel">Hủy</button>
+                    <button type="submit" class="form-btn form-btn-submit">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+<!-- thống kê Bills -->
+<div class="bills-container">
+    <!-- Search bar -->
+    <div class="left-sidebar">
+        <p class="invoice-search-title">Tìm kiếm hóa đơn</p>
+        <input type="text" id="leftSearchInput" placeholder="Nhập dữ liệu để tìm kiếm">
+        <button class="search-button-2" onclick="leftSearch()">Search</button>
+    </div>
+
+    <!-- Table -->
+    <div class="unique-table-container">
+        <h2 style="text-align: center;">Thống kê hóa đơn</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Mã Môn Học</th>
+                <th>Student ID</th>
+                <th>Time</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody id="unique-data-table-body">
+            <!-- Rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+<!-- quản lý nhân viên -->
+    <div class="worker-table-container">
+        <h2 style="text-align: center;">Quản lý nhân viên</h2>
+        <table class="worker-data-table">
+            <thead>
+            <tr>
+                <th>Worker ID</th>
+                <th>Worker Name</th>
+                <th>Worker Role</th>
+                <th>Worker Phone Number</th>
+                <th>Worker Email</th>
+                <th>Worker Wage</th>
+                <th>Worker Attendance Tracking</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="worker-data-table-body">
+            <!-- Thêm các hàng dữ liệu khác tại đây -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    <!-- quản lý đăng nhập -->
+<h2 class="login-management-title">Quản lý đăng nhập</h2>
+<div class="attendance-table-container">
+    <div class="table-wrapper">
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th>Login Name</th>
+                    <th>Time In</th>
+                    <th>Time Out</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <div class="left-sidebar">
+        <input type="text" id="searchById" placeholder="Search by ID">
+        <input type="datetime-local" id="startTime" placeholder="Start Time">
+        <input type="datetime-local" id="endTime" placeholder="End Time">
+        <button style="background-color: #FEB702;" onclick="searchById()">Search by ID</button>
+    </div>
+
+</div>
+
+
+<div id="NLContainer">
+    <table id="NLtable">
+        <thead>
+        <!-- Thêm cột "ID" vào tiêu đề -->
+        <tr>
+            <th>Mã học sinh (ID)</th>
+            <th>Họ và tên</th>
+            <th>Số điện thoại học sinh</th>
+            <th>Họ và tên phụ huynh</th>
+            <th>Số điện thoại phụ huynh</th>
+            <th>Lần đăng nhập gần nhất</th>
+            <th>Tháng không đăng nhập</th>
+        </tr>
+        </thead>
+        <tbody id="NLtableBody">
+        <!-- Dữ liệu sẽ được thêm động bằng JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<script src ="js/ad-inf-tracking.js"></script>
+<script src ="js/ad-inf-tracking2.js"></script>
+<script src ='js/admin-inf-home.js'></script>
+
+
+</body>
+</html>
