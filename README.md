@@ -7,6 +7,8 @@
 - Công nghệ sử dụng Front-end: HTML, CSS, Javascript Back-end: Java core, Servlet, Tomcat 8.5.96 Database: MySQL
 
 - Công cụ sử dụng Intellij Ultimate MySQL Server community MySQL Workbench community
+
+- Báo cáo & phân tích thiết kế: https://docs.google.com/document/d/1hkrIJxzbH8qYEMD2kbxnefMvpCHZglHFUteTt23aGcE/edit?tab=t.0
 _________________________________________________________
 Phân chia công việc:
 
